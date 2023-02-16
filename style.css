@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.list-card {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 20px;
+    justify-items: center;
+    margin: 0 50px;
+}
+
+.card {
+    display: grid;
+    grid-template-rows:  40% 10% 30% 20%;
+    position: relative;
+    font-family: 'Montserrat';
+    width: 250px;
+    height: 400px;
+    background-color: white;
+    border-radius: 15px;
+    user-select: none;
+}
+
+.card img {
+    width: 70%;
+    border-radius: 15px;
+    user-select: none;
+    transition: opacity 0.5s;
+    transition: transform .5s;
+}
+
+.card img:hover {
+    opacity: .8;
+    cursor: pointer;
+    transform: scale(1.1);
+
+}
+
+.titre {
+    font-size: 1rem;
+    margin-left: 13px;
+    color: black;
+}
+
+
+.description {
+    color: black;
+    text-align: left;
+    font-family: 'Montserrat';
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+#buy {
+
+    width: 30%;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 20px;
+    border: 0;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Montserrat';
+}
+
+#buy a {
+    text-decoration: none;
+    color: black;
+}
+
+#buy:hover {
+    opacity: .9;
+    color: black;
+    transition: opacity, color 0.5s;
+}
+
+#favoris {
+    width: 30%;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 20px;
+    background-color: #8A2387;
+    border: 0;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 10px;
+}
+
+#favoris:hover {
+    opacity: .9;
+    color: black;
+    transition: opacity, color 0.5s;
+}
